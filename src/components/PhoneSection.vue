@@ -1,6 +1,6 @@
 <template>
   <div class="phone-body">
-    <div class="feed">
+    <div class="feed" v-if="step === 1">
       <vuegram-post
         v-for="post in posts"
         :post="post"
@@ -15,6 +15,7 @@ import vuegramPost from "./VuegramPost.vue";
 export default {
   name: "PhoneBody",
   props: {
+    step: Number,
     posts: Array,
     filters: Array,
   },

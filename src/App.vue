@@ -69,7 +69,7 @@ export default {
 
         // To enable reuploading of same files in Chrome
 
-        document.querySelector("#files").value = "";
+        document.querySelector("#file").value = "";
       };
     },
   },
