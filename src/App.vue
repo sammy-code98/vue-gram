@@ -1,6 +1,21 @@
 <template>
   <div id="app">
-    <phone-body />
+    <div class="app-phone">
+      <div class="phone-header">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/vue_gram_logo_cp.png"
+        />
+      </div>
+      <phone-body />
+      <div class="phone-footer">
+        <div class="home-cta">
+          <i class="fas fa-home fa-lg"></i>
+        </div>
+        <div class="upload-cta">
+          <i class="far fa-plus-square fa-lg"></i>
+        </div>
+      </div>
+    </div>
     <router-view />
   </div>
 </template>
@@ -14,12 +29,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" src="./styles/app.scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>
+<style lang="scss" src="./styles/app.scss"></style>
