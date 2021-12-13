@@ -1,6 +1,6 @@
 export default [
   {
-    username: "socleansofreshh",
+    username: "Nze_chimdie",
     userImage: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/me_3.jpg",
     postImage:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/tropical_beach.jpg",
@@ -10,7 +10,7 @@ export default [
     filter: "perpetua",
   },
   {
-    username: "djirdehh",
+    username: "Emma_copy",
     userImage: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/me2.png",
     postImage:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/downtown.jpg",
@@ -20,7 +20,7 @@ export default [
     filter: "clarendon",
   },
   {
-    username: "puppers",
+    username: "Sammy_dev",
     userImage:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/pug_personal.jpg",
     postImage:
