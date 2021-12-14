@@ -42,6 +42,7 @@
 import PhoneBody from "./components/PhoneSection.vue";
 import posts from "./data/posts";
 import filters from "./data/filters";
+import EventBus from "../event-bus.js";
 export default {
   name: "App",
   data() {
@@ -72,6 +73,11 @@ export default {
         document.querySelector("#file").value = "";
       };
     },
+  },
+  created() {
+    EventBus.$on("filter-selected", (e) => {
+      this.selectedFilter = e.filter;
+    });
   },
 };
 </script>

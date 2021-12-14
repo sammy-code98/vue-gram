@@ -37,6 +37,7 @@ export default {
     posts: Array,
     filters: Array,
     image: String,
+    selectedFilter: String,
   },
   components: {
     "vuegram-post": vuegramPost,
