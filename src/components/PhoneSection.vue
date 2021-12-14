@@ -11,16 +11,25 @@
     <div v-if="step === 2">
       <div
         class="selected-image"
+        :class="selectedFilter"
         :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
 
-      <div class="filter-container"></div>
+      <div class="filter-container">
+        <filter-type
+          v-for="filter in filters"
+          :filter="filter"
+          :image="image"
+          :key="filters.indexOf(filter)"
+        ></filter-type>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import vuegramPost from "./VuegramPost.vue";
+import FilterType from "./FilterTypes.vue";
 export default {
   name: "PhoneBody",
   props: {
@@ -31,6 +40,7 @@ export default {
   },
   components: {
     "vuegram-post": vuegramPost,
+    "filter-type": FilterType,
   },
 };
 </script>
