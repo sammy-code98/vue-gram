@@ -5,6 +5,9 @@
         <img
           src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/vue_gram_logo_cp.png"
         />
+        <a class="cancel-cta" v-if="step === 2 || step === 3" @click="goHome"
+          >Cancel</a
+        >
       </div>
 
       <!-- bind the posts and filters to the body as props-->
@@ -17,7 +20,7 @@
         v-model="caption"
       />
       <div class="phone-footer">
-        <div class="home-cta">
+        <div class="home-cta" @click="goHome">
           <i class="fas fa-home fa-lg"></i>
         </div>
         <div class="upload-cta">
@@ -72,6 +75,12 @@ export default {
 
         document.querySelector("#file").value = "";
       };
+    },
+    goHome() {
+      this.image = "";
+      this.selectedFilter = "";
+      this.caption = "";
+      this.step = 1;
     },
   },
   created() {
