@@ -1,6 +1,6 @@
 <template>
   <div class="phone-body">
-    <div class="feed" v-if="step === 1">
+    <div class="feed" v-if="step === 1" v-dragscroll.y>
       <vuegram-post
         v-for="post in posts"
         :post="post"
