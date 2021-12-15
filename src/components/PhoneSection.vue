@@ -15,7 +15,7 @@
         :style="{ backgroundImage: 'url(' + image + ')' }"
       ></div>
 
-      <div class="filter-container">
+      <div class="filter-container" v-dragscroll.x>
         <filter-type
           v-for="filter in filters"
           :filter="filter"
