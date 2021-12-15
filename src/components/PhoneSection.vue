@@ -24,6 +24,22 @@
         ></filter-type>
       </div>
     </div>
+    <div v-if="step === 3">
+      <div
+        class="selected-image"
+        :class="selectedFilter"
+        :style="{ backgroundImage: 'url(' + image + ')' }"
+      ></div>
+      <div class="caption-container">
+        <textarea
+          class="caption-input"
+          placeholder="write a caption....."
+          type="text"
+          :value="value"
+          @input="$emit('input', $event.target.value)"
+        ></textarea>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,6 +54,7 @@ export default {
     filters: Array,
     image: String,
     selectedFilter: String,
+    value: String,
   },
   components: {
     "vuegram-post": vuegramPost,
