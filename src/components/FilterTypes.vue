@@ -26,4 +26,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" src="../styles/filter-type.scss"></style>
